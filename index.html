@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ॐ शिव गोरक्ष धाम सरकार ट्रस्ट - ऑनलाइन सेवा बुकिंग">
+  <title>ॐ शिव गोरक्ष धाम सरकार ट्रस्ट | ऑनलाइन बुकिंग</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <div class="brand">ॐ शिव गोरक्ष धाम <span>सरकार ट्रस्ट</span></div>
+    <a class="btn small" href="#booking">नंबर बुक करें</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <div class="badge">ऑनलाइन सार्वजनिक सेवा</div>
+      <h1>अपना सेवा नंबर<br><span>ऑनलाइन बुक करें</span></h1>
+      <p>अपनी जानकारी भरें, सेवा चुनें और बुकिंग नंबर प्राप्त करें। बुकिंग की जानकारी WhatsApp पर भेजने के लिए नीचे बटन दिया गया है।</p>
+      <div class="actions">
+        <a class="btn" href="#booking">नंबर बुक करें</a>
+        <a class="btn ghost" href="#services">सेवाएं देखें</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="assets/poster-1.jpg" alt="ॐ शिव गोरक्ष धाम सरकार ट्रस्ट पोस्टर">
+    </div>
+  </section>
+
+  <section id="services" class="section wrap">
+    <h2>ऑनलाइन सेवाएं</h2>
+    <p class="muted">अपनी आवश्यकता के अनुसार सेवा चुनें।</p>
+    <div class="cards">
+      <button class="card service" data-service="व्यक्तिगत समस्या मार्गदर्शन">
+        <b>01</b><strong>व्यक्तिगत समस्या मार्गदर्शन</strong><span>नंबर बुक करें →</span>
+      </button>
+      <button class="card service" data-service="परिवार संबंधी मार्गदर्शन">
+        <b>02</b><strong>परिवार संबंधी मार्गदर्शन</strong><span>नंबर बुक करें →</span>
+      </button>
+      <button class="card service" data-service="व्यापार/दुकान संबंधी मार्गदर्शन">
+        <b>03</b><strong>व्यापार/दुकान संबंधी मार्गदर्शन</strong><span>नंबर बुक करें →</span>
+      </button>
+      <button class="card service" data-service="अन्य सेवा">
+        <b>04</b><strong>अन्य सेवा</strong><span>नंबर बुक करें →</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="booking" class="section booking wrap">
+    <div>
+      <h2>नंबर बुक करें</h2>
+      <p class="muted">नीचे की जानकारी भरकर अपना ऑनलाइन बुकिंग नंबर बनाएं।</p>
+      <form id="bookingForm">
+        <label>नाम *
+          <input id="name" required placeholder="अपना नाम लिखें">
+        </label>
+        <label>मोबाइल नंबर *
+          <input id="phone" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10 अंकों का मोबाइल नंबर">
+        </label>
+        <label>सेवा *
+          <select id="service" required>
+            <option value="">सेवा चुनें</option>
+            <option>व्यक्तिगत समस्या मार्गदर्शन</option>
+            <option>परिवार संबंधी मार्गदर्शन</option>
+            <option>व्यापार/दुकान संबंधी मार्गदर्शन</option>
+            <option>अन्य सेवा</option>
+          </select>
+        </label>
+        <label>पसंदीदा तारीख *
+          <input id="date" type="date" required>
+        </label>
+        <label>संक्षिप्त जानकारी (वैकल्पिक)
+          <textarea id="note" rows="4" placeholder="अपनी आवश्यकता संक्षेप में लिखें"></textarea>
+        </label>
+        <button class="btn full" type="submit">मेरा नंबर बुक करें</button>
+      </form>
+    </div>
+    <div class="poster-card">
+      <img src="assets/poster-2.jpg" alt="सेवा जानकारी पोस्टर">
+    </div>
+  </section>
+
+  <section id="result" class="section wrap result hidden">
+    <div class="success">✓ बुकिंग तैयार है</div>
+    <h2>आपका बुकिंग नंबर: <span id="bookingNo"></span></h2>
+    <p id="summary"></p>
+    <div class="actions">
+      <a id="wa" class="btn" target="_blank" rel="noopener">WhatsApp पर भेजें</a>
+      <button id="print" class="btn ghost">बुकिंग प्रिंट करें</button>
+    </div>
+    <small>यह वेबसाइट का डिजिटल बुकिंग नंबर है। वास्तविक स्लॉट/समय की पुष्टि ट्रस्ट की ओर से WhatsApp/फोन पर की जा सकती है।</small>
+  </section>
+
+  <section class="section wrap info">
+    <h2>महत्वपूर्ण सूचना</h2>
+    <p>सेवा का समय और उपलब्धता आयोजक/ट्रस्ट की पुष्टि के अनुसार होगी। किसी भी धार्मिक या आध्यात्मिक सेवा को चिकित्सकीय, कानूनी या वित्तीय सलाह का विकल्प न मानें।</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>ॐ शिव गोरक्ष धाम सरकार ट्रस्ट</strong>
+    <p>ऑनलाइन सेवा बुकिंग पोर्टल</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
